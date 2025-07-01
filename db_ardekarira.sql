@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Jul 2025 pada 17.22
+-- Waktu pembuatan: 01 Jul 2025 pada 18.32
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -71,35 +71,6 @@ INSERT INTO `minuman` (`ID`, `Kode_Minuman`, `Nama_Minuman`, `Harga`) VALUES
 (4, '104', 'Pop Ice - Coklat', 7000),
 (5, '105', 'Pop Ice - Mangga', 7000),
 (6, '106', 'Pop Ice - Strawberry', 7000);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `pegawai`
---
-
-CREATE TABLE `pegawai` (
-  `ID_Pegawai` int(11) NOT NULL,
-  `Nama_Pegawai` varchar(30) NOT NULL,
-  `Tempat_Tanggal_Lahir` varchar(30) NOT NULL,
-  `Alamat` varchar(30) NOT NULL,
-  `Jenis_Kelamin` varchar(20) NOT NULL,
-  `Email` varchar(35) NOT NULL,
-  `No_HP` varchar(20) NOT NULL,
-  `Jabatan` varchar(20) NOT NULL,
-  `Gaji_Pokok` int(11) NOT NULL,
-  `Status_Pegawai` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `pegawai`
---
-
-INSERT INTO `pegawai` (`ID_Pegawai`, `Nama_Pegawai`, `Tempat_Tanggal_Lahir`, `Alamat`, `Jenis_Kelamin`, `Email`, `No_HP`, `Jabatan`, `Gaji_Pokok`, `Status_Pegawai`) VALUES
-(2, 'uu', '', '', '', '', '', 'Admin', 0, 'Aktif'),
-(4, 'aa', '', '', '', '', '', 'HRD', 0, 'Aktif'),
-(5, 'mm', '1', 'jj', 'Laki-Laki', '12', '4', 'HRD', 4800000, 'Aktif'),
-(7, 'aa', '111111', '1111111111111111111', 'Laki-Laki', '1111111111111', '11111111111111', 'HRD', 0, 'Aktif');
 
 -- --------------------------------------------------------
 
@@ -189,12 +160,6 @@ ALTER TABLE `minuman`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indeks untuk tabel `pegawai`
---
-ALTER TABLE `pegawai`
-  ADD PRIMARY KEY (`ID_Pegawai`);
-
---
 -- Indeks untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
@@ -229,12 +194,6 @@ ALTER TABLE `minuman`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `pegawai`
---
-ALTER TABLE `pegawai`
-  MODIFY `ID_Pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
 -- AUTO_INCREMENT untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
@@ -244,7 +203,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `users_request`
